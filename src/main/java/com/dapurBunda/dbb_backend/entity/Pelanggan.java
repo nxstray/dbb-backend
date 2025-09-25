@@ -19,7 +19,7 @@ public class Pelanggan {
     
     @Column(name = "password", nullable = false, length = 255)
     private String password;
-
+    
     @Column(name = "email", nullable = false, unique = true, length = 150)
     private String email;
     
