@@ -161,7 +161,7 @@ public class AuthController {
             if (adminOpt.isPresent()) {
                 Admin admin = adminOpt.get();
                 
-                // Verifikasi password menggunakan BCrypt
+                // Verifikasi password
                 if (passwordEncoder.matches(req.getPassword(), admin.getPassword())) {
                     Map<String, Object> response = new HashMap<>();
                     response.put("success", true);
