@@ -25,6 +25,12 @@ public class Menu {
     
     @Column(name = "stok", nullable = false)
     private Integer stok;
+
+    @Column(name = "deskripsi", nullable = true)
+    private String deskripsi;
+
+    @Column(name = "gambar", nullable = true)
+    private String gambar;
     
     // Foreign Key
     @ManyToOne(fetch = FetchType.LAZY)
